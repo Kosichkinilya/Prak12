@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Prak12.PassPage"
+             Title="PassPage">
+    <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" >
+        <StackLayout Orientation="Horizontal">
+            <Label x:Name="PasswordLabel" Text="" FontSize="24" HorizontalOptions="CenterAndExpand"/>
+        </StackLayout>
+        <StackLayout HorizontalOptions="CenterAndExpand" Orientation="Horizontal">
+            <Button Clicked="OnNumberButtonClicked" Text="1" FontSize="20"/>
+            <Button Clicked="OnNumberButtonClicked" Text="2" FontSize="20"/>
+            <Button Clicked="OnNumberButtonClicked" Text="3" FontSize="20"/>
+        </StackLayout>
+        <StackLayout HorizontalOptions="CenterAndExpand" Orientation="Horizontal">
+            <Button Clicked="OnNumberButtonClicked" Text="4" FontSize="20"/>
+            <Button Clicked="OnNumberButtonClicked" Text="5" FontSize="20"/>
+            <Button Clicked="OnNumberButtonClicked" Text="6" FontSize="20"/>
+        </StackLayout>
+        <StackLayout HorizontalOptions="CenterAndExpand" Orientation="Horizontal">
+            <Button Clicked="OnNumberButtonClicked" Text="7" FontSize="20"/>
+            <Button Clicked="OnNumberButtonClicked" Text="8" FontSize="20"/>
+            <Button Clicked="OnNumberButtonClicked" Text="9" FontSize="20"/>
+        </StackLayout>
+        <StackLayout HorizontalOptions="CenterAndExpand" Orientation="Horizontal">
+            <Button Clicked="OnNumberButtonClicked" Text="0" FontSize="20"/>
+            <Button Clicked="OnClearButtonClicked" Text="Clear" FontSize="20"/>
+        </StackLayout>
+       
+    </StackLayout>
+</ContentPage>

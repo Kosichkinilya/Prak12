@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Prak12.MainPage">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem IconImageSource="dotnet_bot.svg" Order="Primary" Priority="0" />
+        
+    </ContentPage.ToolbarItems>
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style TargetType="Entry">
+                <Setter Property="WidthRequest" Value="250" />
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <ScrollView>
+
+        <StackLayout Padding="10" Spacing="15">
+            <Label Text="ФИО" />
+            <Entry x:Name="entrName" />
+
+            <Label Text="Год рождения" />
+            <Entry x:Name="entrNumber" Keyboard="Numeric" />
+
+            <Label Text="Место рождения" />
+            <Entry x:Name="entrAddress" />
+
+            <Label Text="Пол" />
+            <Entry x:Name="entrGender" />
+
+            <Label Text="Национальность" />
+            <Entry x:Name="entrNationality" />
+
+            <Button Clicked="OnSaveClicked" Text="Сохранить" />
+            <Button Clicked="goToListViewClicked" Text="ListView"/>
+           
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>
